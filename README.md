@@ -3,3 +3,24 @@
 # QuingKhaos' Ammo Group
 
 Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too.
+
+**NEW!** Beside moving the `ammo` subgroup, this mod creates the following new subgroups and sorts all vanilla items into them:
+
+- `ammo-bullet`
+- `ammo-shotgun-shell`
+- `ammo-grenade`
+- `ammo-capsule`
+- `ammo-flamethrower`
+- `ammo-rocket`
+- `ammo-cannon-shell`
+- `ammo-artillery-shell`
+- `ammo-landmine`
+- `ammo-laser-rifle`
+
+## For modders
+
+You just need to add `khaosammogroup` as optional dependency and can then conditionally use the new subgroups in your mod. If you think there should be another ammo subgroup, don't hesitate to open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
+
+## Legal Notice
+
+This is not a fork of BlacklightSorane's AmmoGroup, but a clean and newly written drop-in replacement.
