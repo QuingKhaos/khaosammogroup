@@ -3,3 +3,5 @@ Version: 1.0.0
 Date: ????
   Features:
     - Implement ammo group.
+  Compatibility:
+    - Added setting to disable new ammo subgroups for compatibility with other mods.
