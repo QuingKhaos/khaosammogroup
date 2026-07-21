@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
-Date: ????
+Date: 2026-07-21
   Compatibility:
     - Add support for More Ammo.
     - Add support for OCs Ammo and Armor.
