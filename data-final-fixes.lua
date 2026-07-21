@@ -1,4 +1,5 @@
 require("__khaosammogroup__.prototypes.compat.atomic-artillery-shells-final-fixes")
+require("__khaosammogroup__.prototypes.compat.atomic-land-mines-final-fixes")
 require("__khaosammogroup__.prototypes.compat.more-ammo-final-fixes")
 require("__khaosammogroup__.prototypes.compat.oc-ammo-casting-final-fixes")
 require("__khaosammogroup__.prototypes.compat.space-age-ammo-final-fixes")
