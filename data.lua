@@ -23,8 +23,9 @@ if not settings.startup["khaosammogroup-disable-new-subgroups"].value then
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-rocket", group = "ammo", order = "g[ammo-rocket]"} :commit()
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-cannon-shell", group = "ammo", order = "h[ammo-cannon-shell]"} :commit()
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-artillery-shell", group = "ammo", order = "i[ammo-artillery-shell]"} :commit()
-  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-landmine", group = "ammo", order = "j[ammo-landmine]"} :commit()
-  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-laser-rifle", group = "ammo", order = "k[ammo-laser-rifle]"} :commit()
+  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-railgun", group = "ammo", order = "j[ammo-railgun]"} :commit()
+  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-landmine", group = "ammo", order = "k[ammo-landmine]"} :commit()
+  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-laser-rifle", group = "ammo", order = "l[ammo-laser-rifle]"} :commit()
 end
 
 lib.update_subgroup("ammo", "firearm-magazine", "ammo-bullet")
@@ -60,4 +61,6 @@ lib.update_subgroup("item", "land-mine", "ammo-landmine")
 
 if mods["space-age"] then
   lib.update_subgroup("ammo", "capture-robot-rocket", "ammo-rocket")
+
+  lib.update_subgroup("ammo", "railgun-ammo", "ammo-railgun")
 end

@@ -16,4 +16,25 @@ function lib.update_subgroup(_type, name, subgroup)
   khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
 end
 
+--- @param _type khaoslib_item.Types
+--- @param name string
+--- @param subgroup data.ItemSubGroupID
+function lib.update_item_subgroup(_type, name, subgroup)
+  if settings.startup["khaosammogroup-disable-new-subgroups"].value then
+    subgroup = "ammo"
+  end
+
+  khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
+end
+
+--- @param name string
+--- @param subgroup data.ItemSubGroupID
+function lib.update_recipe_subgroup(name, subgroup)
+  if settings.startup["khaosammogroup-disable-new-subgroups"].value then
+    subgroup = "ammo"
+  end
+
+  khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
+end
+
 return lib
