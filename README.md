@@ -17,6 +17,14 @@ Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSo
 - `ammo-landmine`
 - `ammo-laser-rifle`
 
+## Compatible mods
+
+For the following mods, the ammo items are sorted into the new subgroups:
+
+- [Space Age Ammo](https://mods.factorio.com/mod/space-age-ammo)
+
+If you want to see another mod made compatible, please open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
+
 ## For modders
 
 You just need to add `khaosammogroup` as optional dependency and can then conditionally use the new subgroups in your mod. If you think there should be another ammo subgroup, don't hesitate to open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
