@@ -13,6 +13,7 @@
     "khaoslib >= 1.17.2",
 
     "? atomic-artillery-shells >= 2.0.0",
+    "? atomic-land-mines >= 2.0.0",
     "? More_Ammo >= 1.5.22",
     "? OCs_ammo_casting >= 0.9.9",
     "? space-age-ammo >= 0.1.0",

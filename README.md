@@ -23,6 +23,7 @@ Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSo
 For the following mods, the ammo items are sorted into the new subgroups:
 
 - [Atomic Artillery Shells](https://mods.factorio.com/mod/atomic-artillery-shells)
+- [Atomic Land Mines](https://mods.factorio.com/mod/atomic-land-mines)
 - [More Ammo](https://mods.factorio.com/mod/More_Ammo)
 - [OCs Ammo and Armor](https://mods.factorio.com/mod/OCs_ammo_casting)
 - [Space Age Ammo](https://mods.factorio.com/mod/space-age-ammo)
