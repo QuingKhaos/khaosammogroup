@@ -12,6 +12,8 @@
 
     "khaoslib >= 2.0.0",
 
+    "? space-age-ammo >= 0.1.0",
+
     "! AmmoGroup"
   ],
   "package": {
