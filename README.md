@@ -14,6 +14,7 @@ Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSo
 - `ammo-rocket`
 - `ammo-cannon-shell`
 - `ammo-artillery-shell`
+- `ammo-railgun`
 - `ammo-landmine`
 - `ammo-laser-rifle`
 
@@ -22,6 +23,7 @@ Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSo
 For the following mods, the ammo items are sorted into the new subgroups:
 
 - [More Ammo](https://mods.factorio.com/mod/More_Ammo)ᵃ
+- [OCs Ammo and Armor](https://mods.factorio.com/mod/OCs_ammo_casting)
 - [Space Age Ammo](https://mods.factorio.com/mod/space-age-ammo)ᵃ
 
 If you want to see another mod made compatible, please open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
