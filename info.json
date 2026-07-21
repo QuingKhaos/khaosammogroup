@@ -17,6 +17,7 @@
     "? More_Ammo >= 1.5.22",
     "? OCs_ammo_casting >= 0.9.9",
     "? space-age-ammo >= 0.1.0",
+    "? Uranium-Artillery-Shell >= 0.1.10",
 
     "! AmmoGroup"
   ],

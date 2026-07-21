@@ -4,6 +4,7 @@ Date: ????
   Compatibility:
     - Add support for Atomic Artillery Shells.
     - Add support for Atomic Land Mines.
+    - Add support for Uranium Artillery Shell.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2026-07-21
