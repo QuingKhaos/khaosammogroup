@@ -24,6 +24,7 @@ For the following mods, the ammo items are sorted into the new subgroups:
 
 - [Atomic Artillery Shells](https://mods.factorio.com/mod/atomic-artillery-shells)
 - [Atomic Land Mines](https://mods.factorio.com/mod/atomic-land-mines)
+- [Missile Defense Systems (Continued)](https://mods.factorio.com/mod/missile_defense_systems_continued)ᵃ
 - [More Ammo](https://mods.factorio.com/mod/More_Ammo)ᵃ
 - [OCs Ammo and Armor](https://mods.factorio.com/mod/OCs_ammo_casting)
 - [Space Age Ammo](https://mods.factorio.com/mod/space-age-ammo)ᵃ
@@ -31,7 +32,7 @@ For the following mods, the ammo items are sorted into the new subgroups:
 
 If you want to see another mod made compatible, please open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
 
-ᵃ: As of 2026-07-21 this mod is not yet available for Factorio 2.1. The compatibility layer for this mod is still included, so if the mod is updated for Factorio 2.1, the compatibility will be applied automatically.
+ᵃ: As of 2026-07-22 this mod is not yet available for Factorio 2.1. The compatibility layer for this mod is still included, so if the mod is updated for Factorio 2.1, the compatibility will be applied automatically.
 
 ## For modders
 
