@@ -3,6 +3,8 @@ Version: 2.2.1
 Date: ????
   Bugfixes:
     - Better support for OCs Ammo and Armor with changed settings.
+  Changes:
+    - Properly assign recycling recipes to the subgroups too.
 ---------------------------------------------------------------------------------------------------
 Version: 2.2.0
 Date: 2026-07-21
@@ -19,6 +21,11 @@ Version: 2.0.0
 Date: 2026-07-20
   Compatibility:
     - Updated for Factorio 2.1.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: ????
+  Changes:
+    - Properly assign recycling recipes to the subgroups too.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: ????

@@ -14,6 +14,10 @@ function lib.update_subgroup(_type, name, subgroup)
 
   khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
   khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
+
+  if mods["recycler"] then
+    khaoslib_recipe:load(name .. "-recycling"):set {subgroup = subgroup} :commit()
+  end
 end
 
 --- @param _type khaoslib_item.Types
@@ -25,6 +29,10 @@ function lib.update_item_subgroup(_type, name, subgroup)
   end
 
   khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
+
+  if mods["recycler"] then
+    khaoslib_recipe:load(name .. "-recycling"):set {subgroup = subgroup} :commit()
+  end
 end
 
 --- @param name string
