@@ -1,6 +1,9 @@
 mod_info:
   title: "QuingKhaos' Ammo Group"
-  summary: "Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too."
+  summary: |
+    Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too.
+
+    Built-in support for several mods, like OCs Ammo and Armor, and More Ammo.
   description_file: README.md
   attach_source_link: true
   license: gnulgplv3
