@@ -15,6 +15,7 @@
 
     "? atomic-artillery-shells >= 2.1.0",
     "? atomic-land-mines >= 2.1.0",
+    "? jatmn_stone_ammo >= 0.0.7",
     "? missile_defense_systems_continued >= 1.21.0",
     "? More_Ammo >= 1.5.22",
     "? OCs_ammo_casting >= 0.10.1",
