@@ -1,3 +1,4 @@
+require("__khaosammogroup__.prototypes.compat.aai-vehicles-ironclad-final-fixes")
 require("__khaosammogroup__.prototypes.compat.atomic-artillery-shells-final-fixes")
 require("__khaosammogroup__.prototypes.compat.atomic-land-mines-final-fixes")
 require("__khaosammogroup__.prototypes.compat.jatmn-stone-ammo-final-fixes")
