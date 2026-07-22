@@ -13,6 +13,7 @@
 
     "khaoslib >= 2.0.0",
 
+    "? aai-vehicles-ironclad >= 0.8.0",
     "? atomic-artillery-shells >= 2.1.0",
     "? atomic-land-mines >= 2.1.0",
     "? jatmn_stone_ammo >= 0.0.7",
