@@ -2,6 +2,7 @@
 Version: 1.3.0
 Date: ????
   Compatibility:
+    - Add support for Cheap Stone Ammo.
     - Add support for Missile Defense Systems (Continued).
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
