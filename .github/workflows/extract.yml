@@ -18,6 +18,7 @@ jobs:
         version: ["1.x", "2.x"]
         configuration:
           - base
+          - bs
           - release
 
     steps:
