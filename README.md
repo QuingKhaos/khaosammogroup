@@ -34,6 +34,20 @@ For the following mods, the ammo items are sorted into the new subgroups:
 
 If you want to see another mod made compatible, please open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
 
+## More, more, more
+
+You may also like these sorting companion mods:
+
+- [Barrel Stages](https://mods.factorio.com/mod/barrel-stages)
+- [Barreling Group](https://mods.factorio.com/mod/barreling-group2)
+- [QuingKhaos' Bioprocessing Group](https://mods.factorio.com/mod/khaosbioprocessinggroup)
+- [QuingKhaos' Casting Group](https://mods.factorio.com/mod/khaoscastinggroup)
+- [Chemistry Group](https://mods.factorio.com/mod/chemistry-tab)
+- [QuingKhaos' Circuitry Group](https://mods.factorio.com/mod/khaoscircuitrygroup)
+- [QuingKhaos' Modules Group](https://mods.factorio.com/mod/khaosmodulesgroup)
+- [Science Group](https://mods.factorio.com/mod/science-tab)
+- [QuingKhaos' Transport Group](https://mods.factorio.com/mod/khaostransportgroup)
+
 ## For modders
 
 You just need to add `khaosammogroup` as optional dependency and can then conditionally use the new subgroups in your mod. If you think there should be another ammo subgroup, don't hesitate to open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
