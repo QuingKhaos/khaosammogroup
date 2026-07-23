@@ -1,0 +1,36 @@
+{
+  "name": "khaosdev-khaosammogroup-vanilla",
+  "title": "// DEV // QuingKhaos' Ammo Group // Vanilla //",
+  "description": "",
+  "author": "QuingKhaos",
+  "homepage": "https://discord.gg/SYmkaDjFCt",
+  "version": "0.0.0",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base",
+    "! elevated-rails",
+    "! quality",
+    "! space-age",
+
+    "khaosdev",
+    "BeltsAndMoreAnimationFreeze",
+    "ghost-inserters",
+    "remove-animations",
+
+    "barrel-stages",
+    "barreling-group2",
+    "khaosammogroup",
+    "khaoscircuitrygroup",
+    "khaosmodulesgroup",
+    "khaostransportgroup",
+    "science-tab",
+
+    "aai-vehicles-ironclad",
+    "atomic-artillery-shells",
+    "atomic-land-mines",
+    "jatmn_stone_ammo",
+    "missile_defense_systems_continued",
+    "Uranium-Artillery-Shell"
+  ],
+  "spoiling_required": true
+}

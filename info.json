@@ -4,7 +4,7 @@
   "description": "Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1.11",
@@ -14,14 +14,9 @@
     "khaoslib >= 2.0.0",
 
     "? aai-vehicles-ironclad >= 0.8.0",
-    "? atomic-artillery-shells >= 2.1.0",
-    "? atomic-land-mines >= 2.1.0",
-    "? jatmn_stone_ammo >= 0.0.7",
     "? missile_defense_systems_continued >= 1.21.0",
     "? More_Ammo >= 1.5.22",
     "? OCs_ammo_casting >= 0.10.1",
-    "? space-age-ammo >= 0.1.0",
-    "? Uranium-Artillery-Shell >= 0.1.10",
 
     "! AmmoGroup"
   ],

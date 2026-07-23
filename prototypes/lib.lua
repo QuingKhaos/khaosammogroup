@@ -12,11 +12,18 @@ function lib.update_subgroup(_type, name, subgroup)
     subgroup = "ammo"
   end
 
-  khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
-  khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
+  if khaoslib_item.exists(_type, name) then
+    khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
+  end
+
+  if khaoslib_recipe.exists(name) then
+    khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
+  end
 
   if mods["recycler"] then
-    khaoslib_recipe:load(name .. "-recycling"):set {subgroup = subgroup} :commit()
+    if khaoslib_recipe.exists(name .. "-recycling") then
+      khaoslib_recipe:load(name .. "-recycling"):set {subgroup = subgroup} :commit()
+    end
   end
 end
 
@@ -28,10 +35,14 @@ function lib.update_item_subgroup(_type, name, subgroup)
     subgroup = "ammo"
   end
 
-  khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
+  if khaoslib_item.exists(_type, name) then
+    khaoslib_item:load(_type, name):set {subgroup = subgroup} :commit()
+  end
 
   if mods["recycler"] then
-    khaoslib_recipe:load(name .. "-recycling"):set {subgroup = subgroup} :commit()
+    if khaoslib_recipe.exists(name .. "-recycling") then
+      khaoslib_recipe:load(name .. "-recycling"):set {subgroup = subgroup} :commit()
+    end
   end
 end
 
@@ -42,7 +53,9 @@ function lib.update_recipe_subgroup(name, subgroup)
     subgroup = "ammo"
   end
 
-  khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
+  if khaoslib_recipe.exists(name) then
+    khaoslib_recipe:load(name):set {subgroup = subgroup} :commit()
+  end
 end
 
 return lib
