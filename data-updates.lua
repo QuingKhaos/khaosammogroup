@@ -1,5 +1,15 @@
 local khaoslib_item = require("__khaoslib__.prototypes.item")
+local khaoslib_item_subgroup = require("__khaoslib__.prototypes.item-subgroup")
 local lib = require("__khaosammogroup__.prototypes.lib")
+
+if not settings.startup["khaosammogroup-disable-new-subgroups"].value then
+  for name, category in pairs(data.raw["ammo-category"]) do
+    local subgroup_name = "ammo-" .. name
+    if not khaoslib_item_subgroup.exists(subgroup_name) then
+      khaoslib_item_subgroup:load {type = "item-subgroup", name = subgroup_name, group = "ammo", order = "q[" .. subgroup_name .. "]"} :commit()
+    end
+  end
+end
 
 for name, ammo in pairs(data.raw["ammo"]) do
   lib.update_item_subgroup("ammo", name, "ammo-" .. ammo.ammo_category)
@@ -26,6 +36,7 @@ end)) do
   lib.update_item_subgroup("ammo", name, "ammo-grenade")
 end
 
+require("__khaosammogroup__.prototypes.compat.k2-k2so-updates")
 require("__khaosammogroup__.prototypes.compat.missile-defense-systems-updates")
 require("__khaosammogroup__.prototypes.compat.more-ammo-updates")
 require("__khaosammogroup__.prototypes.compat.oc-ammo-casting-updates")
