@@ -1,0 +1,38 @@
+{
+  "name": "khaosdev-khaosammogroup-space-age",
+  "title": "// DEV // QuingKhaos' Ammo Group // Space Age //",
+  "description": "",
+  "author": "QuingKhaos",
+  "homepage": "https://discord.gg/SYmkaDjFCt",
+  "version": "0.0.0",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base",
+    "elevated-rails",
+    "quality",
+    "space-age",
+
+    "khaosdev",
+    "BeltsAndMoreAnimationFreeze",
+    "ghost-inserters",
+    "remove-animations",
+
+    "barrel-stages",
+    "barreling-group2",
+    "khaosammogroup",
+    "khaosbioprocessinggroup",
+    "khaoscastinggroup",
+    "khaoscircuitrygroup",
+    "khaosmodulesgroup",
+    "khaostransportgroup",
+    "science-tab",
+
+    "aai-vehicles-ironclad",
+    "atomic-artillery-shells",
+    "atomic-land-mines",
+    "jatmn_stone_ammo",
+    "space-age-ammo",
+    "Uranium-Artillery-Shell"
+  ],
+  "spoiling_required": true
+}

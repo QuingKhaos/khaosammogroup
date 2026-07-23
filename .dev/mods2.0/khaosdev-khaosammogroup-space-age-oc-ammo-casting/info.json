@@ -1,0 +1,36 @@
+{
+  "name": "khaosdev-khaosammogroup-space-age-oc-ammo-casting",
+  "title": "// DEV // QuingKhaos' Ammo Group // Space Age // OCs Ammo and Armor //",
+  "description": "",
+  "author": "QuingKhaos",
+  "homepage": "https://discord.gg/SYmkaDjFCt",
+  "version": "0.0.0",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base",
+    "elevated-rails",
+    "quality",
+    "space-age",
+
+    "khaosdev",
+    "BeltsAndMoreAnimationFreeze",
+    "ghost-inserters",
+    "remove-animations",
+
+    "barrel-stages",
+    "barreling-group2",
+    "khaosammogroup",
+    "khaosbioprocessinggroup",
+    "khaoscastinggroup",
+    "khaoscircuitrygroup",
+    "khaosmodulesgroup",
+    "khaostransportgroup",
+    "science-tab",
+
+    "aai-vehicles-ironclad",
+    "atomic-land-mines",
+    "OCs_ammo_casting",
+    "Uranium-Artillery-Shell"
+  ],
+  "spoiling_required": true
+}

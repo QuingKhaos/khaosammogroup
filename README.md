@@ -4,7 +4,9 @@
 
 Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too.
 
-**NEW!** Beside moving the `ammo` subgroup, this mod creates the following new subgroups and sorts all vanilla items into them:
+**NEW!** Beside moving the `ammo` subgroup, this mod creates new subgroups based on the ammo category and tries to sort every ammo item and their same-name recipe into the correct subgroup. This is especially useful for mods that add a lot of new ammo items. New subgroups for new ammo categories are automatically created, so you don't have to worry about that.
+
+The following subgroups exist independently of the automatic creation from the ammo category, so they are always created and useable for sorting ammo, that is not an ammo prototype but still should belong to the ammo group:
 
 - `ammo-bullet`
 - `ammo-shotgun-shell`
@@ -15,22 +17,17 @@ Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSo
 - `ammo-cannon-shell`
 - `ammo-artillery-shell`
 - `ammo-railgun`
+- `ammo-tesla`
 - `ammo-landmine`
-- `ammo-laser-rifle`
 
 ## Compatible mods
 
-For the following mods, the ammo items are sorted into the new subgroups:
+For the following mods, the automatic sorting didn't catch everything, so those got added some extra compatibility code to make sure all ammo items are sorted into the correct subgroup:
 
 - [AAI Vehicles: Ironclad](https://mods.factorio.com/mod/aai-vehicles-ironclad)
-- [Atomic Artillery Shells](https://mods.factorio.com/mod/atomic-artillery-shells)
-- [Atomic Land Mines](https://mods.factorio.com/mod/atomic-land-mines)
-- [Cheap Stone Ammo](https://mods.factorio.com/mod/jatmn_stone_ammo)
 - [Missile Defense Systems (Continued)](https://mods.factorio.com/mod/missile_defense_systems_continued)
 - [More Ammo](https://mods.factorio.com/mod/More_Ammo)
 - [OCs Ammo and Armor](https://mods.factorio.com/mod/OCs_ammo_casting)
-- [Space Age Ammo](https://mods.factorio.com/mod/space-age-ammo)
-- [Uranium Artillery Shell](https://mods.factorio.com/mod/Uranium-Artillery-Shell)
 
 If you want to see another mod made compatible, please open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
 
@@ -38,10 +35,11 @@ If you want to see another mod made compatible, please open a discussion thread 
 
 You may also like these sorting companion mods:
 
+- [Assembler Group](https://mods.factorio.com/mod/assembler-group)
 - [Barrel Stages](https://mods.factorio.com/mod/barrel-stages)
 - [Barreling Group](https://mods.factorio.com/mod/barreling-group2)
 - [QuingKhaos' Bioprocessing Group](https://mods.factorio.com/mod/khaosbioprocessinggroup)
-- [QuingKhaos' Casting Group](https://mods.factorio.com/mod/khaoscastinggroup)
+- [[WIP] QuingKhaos' Casting Group](https://mods.factorio.com/mod/khaoscastinggroup)
 - [Chemistry Group](https://mods.factorio.com/mod/chemistry-tab)
 - [QuingKhaos' Circuitry Group](https://mods.factorio.com/mod/khaoscircuitrygroup)
 - [QuingKhaos' Modules Group](https://mods.factorio.com/mod/khaosmodulesgroup)
@@ -50,7 +48,9 @@ You may also like these sorting companion mods:
 
 ## For modders
 
-You just need to add `khaosammogroup` as optional dependency and can then conditionally use the new subgroups in your mod. If you think there should be another ammo subgroup, don't hesitate to open a discussion thread on the mod portal, or an issue on GitHub, or join the Discord server and let me know.
+Subgroups are created during `data.lua` execution, so you can use them in `data-updates.lua` without dependency. But I'm happy if you add the mod as a recommended dependency, so that users know that your mod is compatible with this one.
+
+Sorting ammo items into the new subgroups is done during `data-updates.lua` execution, so you have the chance to patch things up in `data-final-fixes.lua`.
 
 ## Legal Notice
 

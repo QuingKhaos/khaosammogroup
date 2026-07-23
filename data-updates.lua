@@ -1,11 +1,9 @@
+local khaoslib_item = require("__khaoslib__.prototypes.item")
 local lib = require("__khaosammogroup__.prototypes.lib")
 
-lib.update_subgroup("ammo", "firearm-magazine", "ammo-bullet")
-lib.update_subgroup("ammo", "piercing-rounds-magazine", "ammo-bullet")
-lib.update_subgroup("ammo", "uranium-rounds-magazine", "ammo-bullet")
-
-lib.update_subgroup("ammo", "shotgun-shell", "ammo-shotgun-shell")
-lib.update_subgroup("ammo", "piercing-shotgun-shell", "ammo-shotgun-shell")
+for name, ammo in pairs(data.raw["ammo"]) do
+  lib.update_item_subgroup("ammo", name, "ammo-" .. ammo.ammo_category)
+end
 
 lib.update_subgroup("capsule", "grenade", "ammo-grenade")
 lib.update_subgroup("capsule", "cluster-grenade", "ammo-grenade")
@@ -16,23 +14,18 @@ lib.update_subgroup("capsule", "defender-capsule", "ammo-capsule")
 lib.update_subgroup("capsule", "distractor-capsule", "ammo-capsule")
 lib.update_subgroup("capsule", "destroyer-capsule", "ammo-capsule")
 
-lib.update_subgroup("ammo", "flamethrower-ammo", "ammo-flamethrower")
-
-lib.update_subgroup("ammo", "rocket", "ammo-rocket")
-lib.update_subgroup("ammo", "explosive-rocket", "ammo-rocket")
-lib.update_subgroup("ammo", "atomic-bomb", "ammo-rocket")
-
-lib.update_subgroup("ammo", "cannon-shell", "ammo-cannon-shell")
-lib.update_subgroup("ammo", "explosive-cannon-shell", "ammo-cannon-shell")
-lib.update_subgroup("ammo", "uranium-cannon-shell", "ammo-cannon-shell")
-lib.update_subgroup("ammo", "explosive-uranium-cannon-shell", "ammo-cannon-shell")
-
-lib.update_subgroup("ammo", "artillery-shell", "ammo-artillery-shell")
-
-lib.update_subgroup("item", "land-mine", "ammo-landmine")
-
-if mods["space-age"] then
-  lib.update_subgroup("ammo", "capture-robot-rocket", "ammo-rocket")
-
-  lib.update_subgroup("ammo", "railgun-ammo", "ammo-railgun")
+for name, _ in pairs(data.raw["land-mine"]) do
+  lib.update_item_subgroup("item", name, "ammo-landmine")
 end
+
+-- e.g. from AAI Vehicles: Ironclad
+for _, name in pairs(khaoslib_item.find("ammo", function(item)
+  --- @cast item data.AmmoItemPrototype
+  return item.ammo_category == "mortar-bomb"
+end)) do
+  lib.update_item_subgroup("ammo", name, "ammo-grenade")
+end
+
+require("__khaosammogroup__.prototypes.compat.missile-defense-systems-updates")
+require("__khaosammogroup__.prototypes.compat.more-ammo-updates")
+require("__khaosammogroup__.prototypes.compat.oc-ammo-casting-updates")
