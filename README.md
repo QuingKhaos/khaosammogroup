@@ -25,6 +25,8 @@ The following subgroups exist independently of the automatic creation from the a
 For the following mods, the automatic sorting didn't catch everything, so those got added some extra compatibility code to make sure all ammo items are sorted into the correct subgroup:
 
 - [AAI Vehicles: Ironclad](https://mods.factorio.com/mod/aai-vehicles-ironclad)
+- [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
+- [Krastorio 2 Spaced Out](https://mods.factorio.com/mod/Krastorio2-spaced-out)
 - [Missile Defense Systems (Continued)](https://mods.factorio.com/mod/missile_defense_systems_continued)
 - [More Ammo](https://mods.factorio.com/mod/More_Ammo)
 - [OCs Ammo and Armor](https://mods.factorio.com/mod/OCs_ammo_casting)
@@ -48,9 +50,9 @@ You may also like these sorting companion mods:
 
 ## For modders
 
-Subgroups are created during `data.lua` execution, so you can use them in `data-updates.lua` without dependency. But I'm happy if you add the mod as a recommended dependency, so that users know that your mod is compatible with this one.
+The above listed subgroups are created during `data.lua` execution, so you can use them in `data-updates.lua` without dependency. But I'm happy if you add the mod as a recommended dependency, so that users know that your mod is compatible with this one.
 
-Sorting ammo items into the new subgroups is done during `data-updates.lua` execution, so you have the chance to patch things up in `data-final-fixes.lua`.
+Dynamically creating subgroups and sorting all ammo items into the new subgroups is done during `data-updates.lua` execution, so you have the chance to patch things up in `data-final-fixes.lua`.
 
 ## Legal Notice
 

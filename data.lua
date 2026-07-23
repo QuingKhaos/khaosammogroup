@@ -22,14 +22,7 @@ if not settings.startup["khaosammogroup-disable-new-subgroups"].value then
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-rocket", group = "ammo", order = "g[ammo-rocket]"} :commit()
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-cannon-shell", group = "ammo", order = "h[ammo-cannon-shell]"} :commit()
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-artillery-shell", group = "ammo", order = "i[ammo-artillery-shell]"} :commit()
-  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-railgun", group = "ammo", order = "j[ammo-railgun]"} :commit()
-  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-tesla", group = "ammo", order = "k[ammo-tesla]"} :commit()
+  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-railgun", group = "ammo", order = "x[ammo-railgun]"} :commit()
+  khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-tesla", group = "ammo", order = "y[ammo-tesla]"} :commit()
   khaoslib_item_subgroup:load {type = "item-subgroup", name = "ammo-landmine", group = "ammo", order = "z[ammo-landmine]"} :commit()
-
-  for name, category in pairs(data.raw["ammo-category"]) do
-    local subgroup_name = "ammo-" .. name
-    if not khaoslib_item_subgroup.exists(subgroup_name) then
-      khaoslib_item_subgroup:load {type = "item-subgroup", name = subgroup_name, group = "ammo", order = "q[" .. subgroup_name .. "]"} :commit()
-    end
-  end
 end

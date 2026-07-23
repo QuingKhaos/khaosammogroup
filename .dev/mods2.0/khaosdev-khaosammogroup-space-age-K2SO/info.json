@@ -1,0 +1,33 @@
+{
+  "name": "khaosdev-khaosammogroup-space-age-K2SO",
+  "title": "// DEV // QuingKhaos' Ammo Group // Space Age // Krastorio 2 Spaced Out //",
+  "description": "",
+  "author": "QuingKhaos",
+  "homepage": "https://discord.gg/SYmkaDjFCt",
+  "version": "0.0.0",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base",
+    "elevated-rails",
+    "quality",
+    "space-age",
+
+    "khaosdev",
+    "BeltsAndMoreAnimationFreeze",
+    "ghost-inserters",
+    "remove-animations",
+
+    "barrel-stages",
+    "barreling-group2",
+    "khaosammogroup",
+    "khaosbioprocessinggroup",
+    "khaoscastinggroup",
+    "khaoscircuitrygroup",
+    "khaosmodulesgroup",
+    "khaostransportgroup",
+    "science-tab",
+
+    "Krastorio2-spaced-out"
+  ],
+  "spoiling_required": true
+}
