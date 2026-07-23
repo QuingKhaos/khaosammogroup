@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.4.0
-Date: ????
+Date: 2026-07-23
   Features:
     - Try to catch all ammo with their ammo category sorted automatically.
   Compatibility:
@@ -41,7 +41,7 @@ Date: 2026-07-20
     - Updated for Factorio 2.1.
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.0
-Date: ????
+Date: 2026-07-23
   Features:
     - Try to catch all ammo with their ammo category sorted automatically.
   Compatibility:
