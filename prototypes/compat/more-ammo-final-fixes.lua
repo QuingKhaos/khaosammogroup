@@ -7,12 +7,6 @@ if mods["More_Ammo"] then
   lib.update_item_subgroup("ammo", "he-rounds-magazine", "ammo-bullet")
   lib.update_item_subgroup("ammo", "sp-rounds-magazine", "ammo-bullet")
   lib.update_item_subgroup("ammo", "tungsten-rounds-magazine", "ammo-bullet")
-  lib.update_item_subgroup("ammo", "high-capacity-acid-rounds-magazine", "ammo-bullet")
-  lib.update_item_subgroup("ammo", "high-capacity-fire-rounds-magazine", "ammo-bullet")
-  lib.update_item_subgroup("ammo", "high-capacity-fmj-rounds-magazine", "ammo-bullet")
-  lib.update_item_subgroup("ammo", "high-capacity-he-rounds-magazine", "ammo-bullet")
-  lib.update_item_subgroup("ammo", "high-capacity-sp-rounds-magazine", "ammo-bullet")
-  lib.update_item_subgroup("ammo", "high-capacity-tungsten-rounds-magazine", "ammo-bullet")
 
   lib.update_recipe_subgroup("acid-ammo-recipe", "ammo-bullet")
   lib.update_recipe_subgroup("fire-ammo-recipe", "ammo-bullet")
@@ -20,16 +14,28 @@ if mods["More_Ammo"] then
   lib.update_recipe_subgroup("he-ammo-recipe", "ammo-bullet")
   lib.update_recipe_subgroup("sp-ammo-recipe", "ammo-bullet")
   lib.update_recipe_subgroup("tungsten-ammo-recipe", "ammo-bullet")
-  lib.update_recipe_subgroup("high-capacity-acid-ammo-recipe", "ammo-bullet")
-  lib.update_recipe_subgroup("high-capacity-fire-ammo-recipe", "ammo-bullet")
-  lib.update_recipe_subgroup("high-capacity-fmj-ammo-recipe", "ammo-bullet")
-  lib.update_recipe_subgroup("high-capacity-he-ammo-recipe", "ammo-bullet")
-  lib.update_recipe_subgroup("high-capacity-sp-ammo-recipe", "ammo-bullet")
-  lib.update_recipe_subgroup("high-capacity-tungsten-ammo-recipe", "ammo-bullet")
 
   lib.update_item_subgroup("ammo", "uranium-shotgun-shell", "ammo-shotgun-shell")
-  lib.update_item_subgroup("ammo", "high-capacity-uranium-shotgun-shell", "ammo-shotgun-shell")
 
   lib.update_recipe_subgroup("uranium-shotgun-recipe", "ammo-shotgun-shell")
-  lib.update_recipe_subgroup("high-capacity-uranium-shotgun-recipe", "ammo-shotgun-shell")
+
+  if settings.startup["high-capacity-magazines"].value then
+    lib.update_item_subgroup("ammo", "high-capacity-acid-rounds-magazine", "ammo-bullet")
+    lib.update_item_subgroup("ammo", "high-capacity-fire-rounds-magazine", "ammo-bullet")
+    lib.update_item_subgroup("ammo", "high-capacity-fmj-rounds-magazine", "ammo-bullet")
+    lib.update_item_subgroup("ammo", "high-capacity-he-rounds-magazine", "ammo-bullet")
+    lib.update_item_subgroup("ammo", "high-capacity-sp-rounds-magazine", "ammo-bullet")
+    lib.update_item_subgroup("ammo", "high-capacity-tungsten-rounds-magazine", "ammo-bullet")
+
+    lib.update_recipe_subgroup("high-capacity-acid-ammo-recipe", "ammo-bullet")
+    lib.update_recipe_subgroup("high-capacity-fire-ammo-recipe", "ammo-bullet")
+    lib.update_recipe_subgroup("high-capacity-fmj-ammo-recipe", "ammo-bullet")
+    lib.update_recipe_subgroup("high-capacity-he-ammo-recipe", "ammo-bullet")
+    lib.update_recipe_subgroup("high-capacity-sp-ammo-recipe", "ammo-bullet")
+    lib.update_recipe_subgroup("high-capacity-tungsten-ammo-recipe", "ammo-bullet")
+
+    lib.update_item_subgroup("ammo", "high-capacity-uranium-shotgun-shell", "ammo-shotgun-shell")
+
+    lib.update_recipe_subgroup("high-capacity-uranium-shotgun-recipe", "ammo-shotgun-shell")
+  end
 end
