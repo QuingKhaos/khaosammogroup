@@ -4,7 +4,7 @@
   "description": "Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0.77",
