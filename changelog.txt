@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.4.2
+Date: ????
+  Changes:
+    - New colors for the ammo group icon (customizable with QuingKhaos' Advanced Settings).
+---------------------------------------------------------------------------------------------------
 Version: 2.4.1
 Date: 2026-07-24
   Bugfixes:
@@ -44,6 +49,11 @@ Version: 2.0.0
 Date: 2026-07-20
   Compatibility:
     - Updated for Factorio 2.1.
+---------------------------------------------------------------------------------------------------
+Version: 1.4.2
+Date: ????
+  Changes:
+    - New colors for the ammo group icon (customizable with QuingKhaos' Advanced Settings).
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.1
 Date: 2026-07-24

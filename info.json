@@ -4,13 +4,15 @@
   "description": "Adds a new Ammo group to the crafting menu. Drop-in replacement for BlacklightSorane's AmmoGroup for 2.1, supports 2.0 too.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1.11",
     "(?) recycler >= 2.1.11",
     "? space-age >= 2.1.11",
 
+    "? khaos-advanced-settings",
+    "khaosbash >= 2.1.0",
     "khaoslib >= 2.0.0",
 
     "? aai-vehicles-ironclad >= 0.8.0",

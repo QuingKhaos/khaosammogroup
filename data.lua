@@ -1,3 +1,4 @@
+local khaosbash = require("__khaosbash__.prototypes.lib")
 local khaoslib_item_group = require("__khaoslib__.prototypes.item-group")
 local khaoslib_item_subgroup = require("__khaoslib__.prototypes.item-subgroup")
 
@@ -8,7 +9,12 @@ khaoslib_item_group:load {
   type = "item-group",
   name = "ammo",
   order = "ea[ammo]",
-} :set_icons {{icon = "__base__/graphics/technology/uranium-ammo.png", icon_size = 256}}
+} :set_icons(khaosbash.load_icons(
+    "__khaosbash__/graphics/base/technology/ammo",
+    settings.startup["khaosammogroup-advanced-icon-color-magazine-1"].value --[[@as data.Color]],
+    settings.startup["khaosammogroup-advanced-icon-color-magazine-2"].value --[[@as data.Color]],
+    settings.startup["khaosammogroup-advanced-icon-color-bullets"].value --[[@as data.Color]]
+  ))
   :commit()
 
 khaoslib_item_subgroup:load("ammo"):set {group = "ammo", order = "a[ammo]"} :commit()
